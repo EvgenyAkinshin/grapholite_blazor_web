@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+
+    <title>BlazorAppWasm2</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/font-styles.css" rel="stylesheet">
+    <link href="css/tailwind.css" rel="stylesheet">
+    <!--<link href="css/custom.css" rel="stylesheet">-->
+    <link href="BlazorAppWasm2.styles.css" rel="stylesheet" />
+    <style>
+        .icon::before {
+            font-size: 30px;
+        }
+
+        .icon-medium::before {
+            font-size: 24px;
+        }
+
+        .icon-small::before {
+            font-size: 16px;
+        }
+
+
+        .lds-ellipsis {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+            .lds-ellipsis div {
+                position: absolute;
+                top: 33px;
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background: lightblue;
+                animation-timing-function: cubic-bezier(0, 1, 1, 0);
+            }
+
+                .lds-ellipsis div:nth-child(1) {
+                    left: 8px;
+                    animation: lds-ellipsis1 0.6s infinite;
+                }
+
+                .lds-ellipsis div:nth-child(2) {
+                    left: 8px;
+                    animation: lds-ellipsis2 0.6s infinite;
+                }
+
+                .lds-ellipsis div:nth-child(3) {
+                    left: 32px;
+                    animation: lds-ellipsis2 0.6s infinite;
+                }
+
+                .lds-ellipsis div:nth-child(4) {
+                    left: 56px;
+                    animation: lds-ellipsis3 0.6s infinite;
+                }
+
+        @keyframes lds-ellipsis1 {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes lds-ellipsis3 {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @keyframes lds-ellipsis2 {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(24px, 0);
+            }
+        }
+    </style>
+</head>
+
+<body style="-webkit-touch-callout: none; touch-action: none;">
+    <div id="app">
+        <div style="position: absolute; left: 0px; right:0px; top:0px; bottom: 0px; display:flex; flex-direction: column; justify-content: center; align-items: center;">
+
+            <svg width="300" viewBox="0 0 409 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M397.224 8.57764H396.285V1.33083H393.728V0.495H399.784V1.33083H397.224V8.57764Z" fill="#3C434B" />
+                <path d="M404.574 8.57764L401.834 1.41382H401.789C401.839 1.97993 401.866 2.65571 401.866 3.43522V8.57764H400.998V0.495H402.411L404.971 7.16384H405.015L407.596 0.495H409V8.57764H408.061V3.37001C408.061 2.77426 408.085 2.12517 408.138 1.42271H408.094L405.329 8.57764H404.574Z" fill="#3C434B" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M42.7822 51.1555V15.5024L49.0482 21.7622V32.3494H67.84C68.3941 32.3583 68.957 32.2872 69.5228 32.136C72.8232 31.2527 74.7815 27.8561 73.9016 24.5543C73.152 21.7622 70.6042 19.9305 67.84 19.9631V19.8031H51.516L45.2501 13.5403H67.92C72.0944 13.5729 76.168 15.6951 78.5144 19.5097C82.1406 25.399 80.3008 33.1259 74.4111 36.7597C73.5638 37.2754 72.678 37.6904 71.7744 37.9838L80.1616 51.1555H73.2113L65.2211 38.6181H49.0482V51.1555H42.7822Z" fill="#5D666F" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M86.4307 51.1545V25.3239H86.5284C86.644 23.3292 87.2454 21.3315 88.3712 19.5087C90.5665 15.9283 94.2786 13.8417 98.1804 13.5719V13.5986V13.5393H111.571C115.746 13.5719 119.819 15.6852 122.163 19.5087C123.277 21.3315 123.878 23.3292 123.997 25.3239H124.02V51.1545H117.757V38.6171H92.6966V51.1545H86.4307ZM117.757 32.3484V26.0827C117.751 25.5758 117.68 25.0631 117.544 24.5533C116.797 21.7613 114.256 19.9296 111.491 19.9622V19.8021H99.0366V19.9622C96.2754 19.9296 93.7305 21.7613 92.981 24.5533C92.8447 25.0631 92.7796 25.5758 92.7736 26.0827H92.6966V32.3484H117.757Z" fill="#5D666F" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M130.583 51.1545V16.1891L136.848 22.4637V32.3484H155.64C156.197 32.3573 156.763 32.2862 157.323 32.135C160.626 31.2518 162.585 27.8551 161.702 24.5533C160.952 21.7613 158.404 19.9296 155.646 19.9622V19.8021H138.635L132.369 13.5393H155.726C159.901 13.5719 163.968 15.6941 166.315 19.5087C169.944 25.398 168.107 33.125 162.214 36.7587C160.185 38.0036 157.939 38.6053 155.726 38.6171H136.848V51.1545H130.583Z" fill="#5D666F" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M174.145 51.1545V13.5393H180.414V32.3484H205.478V13.5393H211.744V51.1545H205.478V38.6171H180.414V51.1545H174.145Z" fill="#5D666F" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M261.868 51.1545V13.5393H268.137V44.8829H296.468V51.1545H261.868Z" fill="#5D666F" />
+                <path d="M308.994 13.5482V51.1575H302.731V13.5482H308.994Z" fill="#5D666F" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M330.932 51.1545V19.808H315.269V13.5393H352.865V19.808H337.201V51.1545H330.932Z" fill="#5D666F" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M359.127 51.1545V44.8829V19.808V13.5393H393.728V19.808H365.39V32.3484H381.978V38.6171H365.39V44.8829H393.728V51.1545H359.127Z" fill="#5D666F" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M224.66 46.7117L224.669 46.6999L229.051 42.3192C233.966 46.199 241.124 45.8729 245.671 41.3292C250.204 36.7885 250.533 29.6276 246.658 24.7046L246.649 24.7164L251.161 20.2024C257.418 27.5855 257.063 38.6736 250.094 45.6477C243.132 52.6159 232.043 52.9686 224.66 46.7117ZM223.505 19.0494C230.47 12.0782 241.556 11.7255 248.942 17.9853L244.421 22.5172L244.424 22.5053C239.509 18.7352 232.434 19.0968 227.94 23.5961C223.44 28.0983 223.078 35.1791 226.85 40.0903L222.462 44.4799L222.447 44.4947C216.19 37.1056 216.546 26.0176 223.505 19.0494Z" fill="#3C434B" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.45596 46.8272L7.47077 46.8153L11.731 42.5562C16.5127 46.3382 23.4867 46.021 27.9069 41.6018C28.7098 40.7986 29.3764 39.9094 29.9096 38.9609H17.754L24.0407 32.8641H34.4958H37.568C37.565 37.5471 35.7845 42.2331 32.2175 45.8046C25.439 52.5861 14.6433 52.927 7.45596 46.8272ZM6.34794 19.9236C11.9621 14.307 20.3315 13.1066 27.2581 16.3966C27.261 16.3966 27.2611 16.3966 27.2611 16.3936C27.3025 16.4114 27.341 16.4321 27.3796 16.4558C28.1617 16.8382 28.9231 17.2828 29.7497 17.8607C29.803 17.8933 29.8622 17.9348 29.9156 17.9793C30.2533 18.2134 30.5851 18.4683 30.9939 18.8122C31.0236 18.8359 31.0502 18.8596 31.0799 18.8803L26.6626 23.3025L26.6774 23.2906C26.6182 23.2432 26.5589 23.2047 26.4997 23.1632C26.3752 23.0535 26.2478 22.9587 26.2241 22.9587C25.7472 22.6119 25.2524 22.3185 24.7399 22.0725C20.1774 19.7784 14.4655 20.5372 10.6585 24.3488C6.28572 28.7235 5.93021 35.5998 9.59201 40.3836L5.31399 44.6606L5.3051 44.6695C-0.777155 37.4849 -0.427566 26.6992 6.34794 19.9236Z" fill="#3C434B" />
+            </svg>
+            <div style=" color: red;">proof of concept</div>
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            <div>loading...</div>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/Aphalina.Drawing.Blazor/jsUtils.js"></script>
+</body>
+
+</html>
