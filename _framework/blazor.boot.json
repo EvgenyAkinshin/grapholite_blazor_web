@@ -16,7 +16,7 @@
       "Aphalina.Diagrams.FlowCharts.dll": "sha256-+boK20DNrJhSdhaZSHWRegiI9YddKy9v5cyZol+KS1s=",
       "Aphalina.Diagrams.UI.dll": "sha256-\/LscHh4X0NBk7UiPCCeDaXPf2spBobIwQktt1Y\/lTV4=",
       "Aphalina.Diagrams.Visio.dll": "sha256-JeDDCokLdRbXBkQJuOUDc9log5qXkInQtTlvoiRJXDU=",
-      "Aphalina.Drawing.Blazor.dll": "sha256-EgR2BrwvNWWN1bxnq9Ov7rHhr56MbKM1y9ohWFApGpM=",
+      "Aphalina.Drawing.Blazor.dll": "sha256-1I88soD4yafrMQ0QHbhpc2Dt9p581pETu72PAXyouS4=",
       "Aphalina.Drawing.Connections.Design.dll": "sha256-jLD6JUrQ7ZDtS1c2Eb7JQQHdM6vAWAlNWK+9IBEMjM0=",
       "Aphalina.Drawing.Connections.dll": "sha256-4ogF2WDFesH39TD3lPU4GTDmSr22L\/5uxadEPtlDU7U=",
       "Aphalina.Drawing.Design.dll": "sha256-BB+QAzVoWHP8xT02WSig9xqujQMF7A9Lj+ya5C6IufU=",
@@ -84,7 +84,7 @@
     "runtime": {
       "dotnet.7.0.1.9rr87buesy.js": "sha256-N\/Ffa51\/TpTIN3R\/Qt3ty0vll3m03Y8iHs2tgMCu+OE=",
       "dotnet.timezones.blat": "sha256-6Aw0ALXLw\/A0vGcC5uG5GnFafYpL\/iHHLo22LyOR+TA=",
-      "dotnet.wasm": "sha256-MfK9Azh+VBUnCpXeK3hI1kJoaTabDYmC05GScE\/NVWE=",
+      "dotnet.wasm": "sha256-6loDnLjfyvdMn94enPLe9oXxqndfc4NPRN19N0hUvOY=",
       "icudt.dat": "sha256-DXO3tJHXDOV4qgW\/w8ooggAgZdAVpa5ZllYYAQWpYIk=",
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
       "icudt_EFIGS.dat": "sha256-l7NtS3cI+3VUoQ2XQvlzMb8x4Ow1BtnOJNLWc6bifW0=",
@@ -93,7 +93,7 @@
     "runtimeAssets": {
       "dotnet.wasm": {
         "behavior": "dotnetwasm",
-        "hash": "sha256-MfK9Azh+VBUnCpXeK3hI1kJoaTabDYmC05GScE\/NVWE="
+        "hash": "sha256-6loDnLjfyvdMn94enPLe9oXxqndfc4NPRN19N0hUvOY="
       }
     },
     "satelliteResources": null
