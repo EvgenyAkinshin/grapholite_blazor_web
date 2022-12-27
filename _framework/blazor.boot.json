@@ -16,15 +16,15 @@
       "Aphalina.Diagrams.FlowCharts.dll": "sha256-+boK20DNrJhSdhaZSHWRegiI9YddKy9v5cyZol+KS1s=",
       "Aphalina.Diagrams.UI.dll": "sha256-\/LscHh4X0NBk7UiPCCeDaXPf2spBobIwQktt1Y\/lTV4=",
       "Aphalina.Diagrams.Visio.dll": "sha256-JeDDCokLdRbXBkQJuOUDc9log5qXkInQtTlvoiRJXDU=",
-      "Aphalina.Drawing.Blazor.dll": "sha256-1I88soD4yafrMQ0QHbhpc2Dt9p581pETu72PAXyouS4=",
+      "Aphalina.Drawing.Blazor.dll": "sha256-aZ5AgvzTxl0tpoS6vTQxgfzVKx0D0u5ESCwEuFeUI34=",
       "Aphalina.Drawing.Connections.Design.dll": "sha256-jLD6JUrQ7ZDtS1c2Eb7JQQHdM6vAWAlNWK+9IBEMjM0=",
       "Aphalina.Drawing.Connections.dll": "sha256-4ogF2WDFesH39TD3lPU4GTDmSr22L\/5uxadEPtlDU7U=",
       "Aphalina.Drawing.Design.dll": "sha256-BB+QAzVoWHP8xT02WSig9xqujQMF7A9Lj+ya5C6IufU=",
       "Aphalina.Drawing.dll": "sha256-F50vXdC\/WyqR54hbrnv3QS8AgJZljZlTSjfTj+pKpdY=",
       "Aphalina.Drawing.UI.dll": "sha256-uPtgkTB8cGMsFnlXfHqL3YLGqbl8RTQfpA16dSOVZyI=",
       "Aptacode.BlazorCanvas.dll": "sha256-i+JiJb\/Evj+wQo7LIxu1VmNfi8GznMnVLilb6gOrXQQ=",
-      "BlazorAppWasm2.dll": "sha256-SSWllLIaIDmHUxKkZ2mso2VS8OX1j+B8hJfUonjc5tk=",
-      "Microsoft.AspNetCore.Components.dll": "sha256-TKycamGuHKgwu1EHPZ\/A+p8PmRpRJc\/c7lW2Syeruv0=",
+      "BlazorAppWasm2.dll": "sha256-llIOF2OZqAXjv4OIbdlP0uSXf1riZ9y21IFdERvTAlQ=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-SZCGrMhHmPfsrxxNFzyg5ih71I+zwwTv3z2CKOvYHQE=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-7eG6ktkC7ETNMvWXD2ZZCLHGoU\/evhaDnKn\/Nauo\/Ic=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-jj0gEWGz0IP5DtImmDS2JCnL7nDJvw39GXaOgt9q2BU=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-X\/f4fDl2cuIRXeWHhK\/f2UqQbFioD+RU4a4CEh0zrrQ=",
@@ -82,9 +82,9 @@
     "libraryInitializers": null,
     "pdb": null,
     "runtime": {
-      "dotnet.7.0.1.9rr87buesy.js": "sha256-N\/Ffa51\/TpTIN3R\/Qt3ty0vll3m03Y8iHs2tgMCu+OE=",
+      "dotnet.7.0.1.9rr87buesy.js": "sha256-Ta9t4ujeFdsBUiMhxGy4+NQmgrKn3JWkdfa1CVlCYC4=",
       "dotnet.timezones.blat": "sha256-6Aw0ALXLw\/A0vGcC5uG5GnFafYpL\/iHHLo22LyOR+TA=",
-      "dotnet.wasm": "sha256-6loDnLjfyvdMn94enPLe9oXxqndfc4NPRN19N0hUvOY=",
+      "dotnet.wasm": "sha256-fb+evTU7cfWITK\/inqI0isRuga9oUqYfbS2xs8qwoik=",
       "icudt.dat": "sha256-DXO3tJHXDOV4qgW\/w8ooggAgZdAVpa5ZllYYAQWpYIk=",
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
       "icudt_EFIGS.dat": "sha256-l7NtS3cI+3VUoQ2XQvlzMb8x4Ow1BtnOJNLWc6bifW0=",
@@ -93,7 +93,7 @@
     "runtimeAssets": {
       "dotnet.wasm": {
         "behavior": "dotnetwasm",
-        "hash": "sha256-6loDnLjfyvdMn94enPLe9oXxqndfc4NPRN19N0hUvOY="
+        "hash": "sha256-fb+evTU7cfWITK\/inqI0isRuga9oUqYfbS2xs8qwoik="
       }
     },
     "satelliteResources": null
