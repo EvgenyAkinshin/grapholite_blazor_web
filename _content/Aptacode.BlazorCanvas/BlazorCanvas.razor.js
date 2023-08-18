@@ -5,6 +5,18 @@ export function canvas_register(divElement) {
     ctx = divElement.querySelector('canvas').getContext("2d");
 }
 
+export function canvas_rotate(angle) {
+    ctx.rotate(angle);
+}
+
+export function canvas_translate(x, y) {
+    ctx.translate(x, y);
+}
+
+export function canvas_scale(scale) {
+    ctx.scale(scale);
+}
+
 export function canvas_save() {
     ctx.save();
 }
@@ -213,6 +225,11 @@ export async function canvas_loadImage(imageSource) {
 export function canvas_drawImage(src, x, y, w, h) {
     const image = images[src];
     ctx.drawImage(image, x, y, w, h);
+}
+
+export function canvas_drawImagePortion(src, sx, sy, sw, sh, dx, dy, dw, dh) {
+    const image = images[src];
+    ctx.drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh,);
 }
 
 export function canvas_transform(a, b, c, d, e, f) {
